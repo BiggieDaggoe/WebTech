@@ -1,5 +1,41 @@
+html, body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    width: 100vw;
+    background: linear-gradient(135deg, white 60%, rgba(68, 140, 133, 0.3) 50%);
+    position: fixed;
+}
+
+.image {
+    max-height: auto;
+    max-width: 30%;
+}
+
 li {
-    display: inline;
+    float: left;
+}
+
+a {
+    display: block;
+    color: azure;
+    text-align: center;
+    padding: 0.5rem;
+    text-decoration: none;
+}
+
+.active {
+    color: white;
+    background-color: rgb(86, 156, 115)
+}
+
+ul {
+    top: 0;
+    position: sticky;
+    overflow: hidden;
+    background-color: rgba(68, 140, 133, 0.7);
+    list-style-type: none;
+    margin: 0;
+    padding: 0.3rem;
 }
 
 table {
@@ -13,4 +49,14 @@ th, td {
 
 h1 {
     font-size: 16px;
+}
+
+footer {
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+    padding-top: 1rem;
+    height: 2.5rem;
+    text-align: center;
+    background-color: rgba(68, 140, 133, 0.7)
 }
