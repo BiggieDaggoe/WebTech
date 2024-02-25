@@ -1,9 +1,9 @@
 html, body {
+    height: 100%;
+    width: 100%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
-    width: 100vw;
-    background: linear-gradient(135deg, white 60%, rgba(68, 140, 133, 0.3) 50%);
-    position: fixed;
+    overflow: hidden;
 }
 
 .image {
@@ -32,7 +32,7 @@ ul {
     top: 0;
     position: sticky;
     overflow: hidden;
-    background-color: rgba(68, 140, 133, 0.7);
+    background-color: rgba(68, 140, 133, 0.9);
     list-style-type: none;
     margin: 0;
     padding: 0.3rem;
@@ -52,11 +52,12 @@ h1 {
 }
 
 footer {
-    width: 100%;
+    position:fixed;
+    margin: 0;
     bottom: 0;
-    position: fixed;
-    padding-top: 1rem;
-    height: 2.5rem;
+    width: 100%;
+    padding: 0.5rem;
+    height: fit-content;
     text-align: center;
-    background-color: rgba(68, 140, 133, 0.7)
+    background-color: rgb(106, 178, 171)
 }
