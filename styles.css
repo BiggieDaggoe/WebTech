@@ -1,21 +1,126 @@
-html, body {
-    height: 100%;
-    width: 100%;
+/* SCSS RGB
+$gunmetal: rgba(12, 45, 57, 1);
+$pearl: rgba(233, 225, 200, 1);
+$air-superiority-blue: rgba(102, 154, 175, 1);
+$sunglow: rgba(251, 207, 77, 1);
+$midnight-green: rgba(4, 59, 77, 1);
+ */
+
+html {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
+    background-color: rgba(233, 225, 200, 0.7);   
+}
+
+body {
+    width: 100%;
+    margin:0;
+    padding:0;
+}
+
+.col-1{
+    padding: 3%;
+    background-color: rgba(233, 225, 200, 1);
+    display: grid;
+    grid-template-columns: 35% 60%;
+    align-items: center;
+    justify-content: center;
+}
+
+.col-3{
+    display: grid;
+    grid-template-columns: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.col-navbar{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(12, 45, 57, 1);
+}
+
+ul {
+    display: flex;
+    font-size: 1.3rem;
+    position: sticky;
     overflow: hidden;
+    background-color: rgba(12, 45, 57, 1);
+    list-style-type: none;
+    margin: 0;
+    padding-top: 1.1rem;
+    padding-bottom: 1.1rem;
 }
 
-.image {
-    max-height: auto;
-    max-width: 30%;
+li:hover{
+    background-color: rgba(4, 59, 77, 0.5);
 }
 
-li {
-    float: left;
+.active {
+    color: white;
+    background-color: rgba(4, 59, 77, 1);
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 3rem;
+}
+
+article {
+    margin-bottom: 0;
+}
+
+
+h1 {
+    font-size: 3rem;
+    color: rgba(12, 45, 57, 1);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: normal;
+}
+
+h2 {
+    font-size: 2rem;
+    color: rgba(12, 45, 57, 1);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: normal;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(255, 255, 255);
+}
+
+h4 {
+    font-size: 2rem;
+    color: rgba(12, 45, 57, 1);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: normal;
+}
+
+.link-font {
+    font-size: 2rem;
+    color: rgba(12, 45, 57, 1);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: normal;
+}
+
+.font-references-ctable{
+    text-decoration: underline;
+}
+
+p {
+    font-size: 1.5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgba(12, 45, 57, 1);
+    margin-bottom: 3rem;
 }
 
 a {
+    width: auto;
     display: block;
     color: azure;
     text-align: center;
@@ -23,41 +128,258 @@ a {
     text-decoration: none;
 }
 
-.active {
-    color: white;
-    background-color: rgb(67, 193, 119)
+.h1-styling{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 3rem;
 }
 
-ul {
-    top: 0;
-    position: sticky;
-    overflow: hidden;
-    background-color: rgba(68, 140, 133, 0.9);
-    list-style-type: none;
-    margin: 0;
-    padding: 0.3rem;
+.sub-paragraphs{
+    font-size: 1.4rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:rgba(12, 45, 57, 1);
+    margin: 1.3rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.final-child-sub {
+    margin-bottom: 0;
+}
+
+.p-styling-recom{
+    margin: 2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.p-styling{
+    margin: 0rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    float: left;
+}
+
+.content-font {
+    color: rgba(12, 45, 57, 1);
+}
+
+.recomlinks {
+    color: rgba(102, 154, 175, 1);
+    font-weight: bold;
+}
+
+.rec-books{
+    max-height: 25rem;
+    max-width: 15rem;
+    box-shadow: 10px 10px 5px rgba(129, 121, 97, 0.5);
+}
+
+.pics-about-the-book{
+    max-height: 30rem;
+    max-width: 25rem;
+    box-shadow: 10px 10px 5px rgba(129, 121, 97, 0.5);
+}
+
+.fun-facts-box{
+    border-style: solid;
+    border-color: rgba(66, 102, 116, 0.4);
+    background-color: rgba(76, 93, 99, 0.2);
+    border-radius: 3rem;
+    border-width: 0.5rem;
+    height: fit-content;
+    width: 20%;
+    float: right;
+    padding: 0.7rem;
+    box-shadow: 10px 10px 5px rgba(12, 45, 57, 0.4);
+    font-size: 1.1rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgba(12, 45, 57, 1);
+}
+
+.text-within-fun-facts{
+    color: rgb(36, 76, 90);
+    font-style: oblique;
+}
+
+.author-layout{
+    display: flex;
+    padding-bottom:5rem;
+}
+
+#author-text{
+    float:left;
+    width:75%;
+}
+
+#author-image{
+    float: left;
+    padding: 3rem;
+    padding-bottom: 5rem;
+}
+
+#author-image-2{
+    float: right;
+    padding: 2rem;
+    padding-bottom: 5rem;
+}
+
+.imageIndex{
+    max-height: 30rem;
+    max-width: 25rem;
+    box-shadow: 10px 10px 5px rgba(129, 121, 97, 0.5);
+}
+
+#border {
+    margin: auto;
+    margin-bottom: 4%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    width: 40%;
+    min-height: 5rem;
+    background-color: rgba(12, 45, 57, 0.9);
+    border-radius: 25px;
+    box-shadow: 0 0 20px 0 #264134;
+}
+
+.submit-button {
+    min-width: 15%;
+    max-width: 15%;
+    min-height: 2.5rem;
+    max-height: 2.5rem;
+
+    background-color: white;
+    color: #344E41;
+    box-shadow: 0 0 20px 0 #273b31;
+    
+    text-align: center;
+    border: none;
+    background-color: rgba(102, 154, 175, 1);
+    border-radius: 0.7rem;
+    margin-left: 37%;
+    margin-top: 5%;
+}
+
+.submit-button:hover{
+    background-color: #d4d2d2;
+}
+
+
+#user-name {
+   padding-left: 5%;
+   display: flex;
+   justify-content: left;
+}
+
+#user-review {
+   padding-left: 5%;
+   margin-top: 5%;
+   display: flex;
+   justify-content: left;
+}
+
+.review-font{
+    font-size: 1rem;
+}
+
+form {
+    padding-left: 10%;
+}
+
+.input {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 10px;
+    box-sizing: border-box;
+    height: 3rem;
+    width: 50%;
+}
+
+.ic1 {
+    margin-top: 2.5%;
+    margin-left: 5%;
+    padding: 1%;
+}
+
+.ic2 {
+   padding: 1%;
+   margin-top: 1%;
+   margin-left: 3%;
+   height: 15rem;  
+}
+
+.test-class{
+    color: aliceblue;
+}
+
+.tablebooks{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.tablereviews{
+    margin: auto;
+    margin-top: 5%;
 }
 
 table {
-    width: 100%;
-    border: 0.1rem solid black;
+    flex-shrink: 0;
+    width: 90%;
+    border: 0.1rem solid rgb(198, 185, 146);
+    border-spacing: 0;
+    margin-bottom: 3rem;
 }
 
 th, td {
-    border: 0.1rem solid black;
+    border: 0.1rem solid rgb(198, 185, 146);
+    padding: 1.2rem;
+    color:rgba(4, 59, 77, 1);
+    font-size: 1.4rem;
+    text-align: center;
 }
 
-h1 {
-    font-size: 16px;
+th {
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+}
+
+hr{
+    color: rgba(12, 45, 57, 0.2);
+}
+
+#infolinks {
+    display: flex;
+    justify-content: center;
+}
+
+.centerh2 {
+    text-align: center;
+}
+
+#content-list {
+    border-style: solid;
+    border-color: rgba(66, 102, 116, 0.4);
+    background-color: rgba(76, 93, 99, 0.2);
+    border-radius: 3rem;
+    border-width: 0.25rem;
+    margin-left: auto;
+    margin-right: auto;
+    max-height: auto;
+    max-width: 15%;
+    color: rgba(12, 45, 57, 1);
+    font-size: 1.2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 footer {
-    position:fixed;
-    margin: 0;
+    display: flex;
+    justify-content: center;
+    color: whitesmoke;
     bottom: 0;
-    width: 100%;
+    margin: 0;
+    max-width: 100%;
     padding: 0.5rem;
     height: fit-content;
     text-align: center;
-    background-color: rgb(106, 178, 171)
+    background-color: rgba(12, 45, 57, 1)
 }

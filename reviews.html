@@ -3,18 +3,131 @@
   <head>
     <title>Reviews | WebTech</title>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="/images/icon8-haiku-50.png">
   </head>
   <body>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="aboutBook.html">About book</a></li>
-      <li><a href="author.html">Author</a></li>
-      <li><a href="recommended.html">Recommended</a></li>
-      <li><a class="active" href="reviews.html">Reviews</a></li>
-    </ul>
-    <h1>
-      content
-    </h1>
+    <section class="col-navbar">
+      <img class="icon-haiku" src="/images/icon8-haiku-50.png" alt="icon">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutBook.html">About book</a></li>
+        <li><a href="author.html">Author</a></li>
+        <li><a href="recommended.html">Recommended</a></li>
+        <li><a class="active" href="reviews.html">Reviews</a></li>
+      </ul>
+    </section>
+
+    <div class="h1-styling">
+      <h1>What do other readers think?</h1>
+    </div>
+
+    <div class="tablebooks tablereviews">
+      <table>
+        <tbody>
+          <tr>
+            <td>
+              Minnie
+            </td>
+            <td>
+              ★★★★★
+            </td>
+            <td class="review-font">
+              I recently delved into Jane Austen's "Pride and Prejudice," and I
+              must say it exceeded my expectations. The novel masterfully weaves
+              a tale of love, societal expectations, and personal growth in the
+              Regency era. Austen's wit and keen observations on human nature
+              are evident throughout the narrative, making the characters come
+              alive with their flaws and virtues. Elizabeth Bennet, with her
+              intelligence and independence, is a protagonist ahead of her time,
+              and Mr. Darcy's journey from pride to humility adds depth to the
+              storyline.The social commentary on class, marriage, and manners
+              remains relevant, making this novel a timeless exploration of the
+              human condition. The elegant prose and engaging dialogue
+              contribute to an immersive reading experience.For anyone seeking a
+              captivating story with rich character development and societal
+              insights, "Pride and Prejudice" is a must-read classic that
+              continues to resonate with readers across generations.
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Chaitanya
+            </td>
+            <td>
+              ★★★★★
+            </td>
+            <td class="review-font">
+              Love it, love it, love it! Excellent book. It will keep you glued
+              till the very end. You'll be left wanting for more by the time you
+              finish this. Language can be a bit tricky, nothing a dictionary
+              app cannot fix. The acrid language, piercing detail and the vivid
+              picturization make this a worthwhile read. I'll probably read it
+              again and again many times just for the pure joy of reading -
+              there is something of nice and pleasant flow of her language.
+
+              Now as for book and printing - very nice. The font used is Sabon
+              instead of something ghastly like Times New Roman. Text size is
+              quite comfortable. Paper quality is nice and has a smooth texture
+              to it, although people accustomed to the bright off-white pages
+              might be a bit disappointed at the not so bright pages. So my
+              suggestion is to buy the penguin edition.
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Coleen Wolfe
+            </td>
+            <td>
+              ★★★★
+            </td>
+            <td class="review-font">
+              I have seen all 3 of the movies made from this period piece. It
+              was interesting to see just how many words are needed to describe
+              a conversation. Reading this revealed to me that I indeed like
+              things to get to the point. Not necessarily a good character. I do
+              love the story and am glad to have revisited this book. I will
+              need to wait awhile before I grab another one of hers. Although I
+              did read Mansfield Park while traveling in England in the 80’s and
+              it was a terrific train read.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="h1-styling">
+      <h1>Share your thoughts and leave a review!</h1>
+    </div>
+
+    <div id="border">
+      <form>
+        <div id="user-name">
+          <h3>
+            Your name:
+          </h3>
+          <input type="text" class="input ic1" maxlength="20"
+            required="required" placeholder="John" />
+        </div>
+
+        <div id="user-review">
+          <h3>
+            Your review:
+          </h3>
+          <textarea class="input ic2" required="required"
+            placeholder="max. 500 words"></textarea>
+        </div>
+        <button class="submit-button">Submit</button>
+      </form>
+    </div>
+
+    <footer>
+      <div>
+        Made by Mariam Bakkali Kasmi (a.k.a. Murmur the Great) and Taha Charef
+        (a.k.a. Turtur)
+      </div>
+    </footer>
   </body>
+
 </html>
